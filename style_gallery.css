@@ -1,0 +1,115 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: #1b1b1b;
+  }
+  
+  header .logo img {
+    width: 60px;
+    border-radius: 20px;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  
+  .navbar a {
+    
+    text-decoration: none;
+    padding: 8px 17px;
+    color: #fff;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover {
+    background: #bc9667;
+    border-radius: 0.5rem;
+    transition: 0.5s all linear; /* لون عند التمرير */
+  }
+  
+  #menu-icon {
+    display: none; /* أيقونة القائمة ستختفي على الشاشات الكبيرة */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .header-icon i {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10000;
+    column-gap: 0.8rem;
+    color: #fff;
+  }
+  
+  .header-icon i:hover {
+    color: #bc9667;
+  }
+  
+  .search-box {
+    display: none; /* يخفي مربع البحث */
+  }
+  
+  /* تباعد تحت الهيدر لتجنب التداخل */
+  h1 {
+    margin-top: 120px; /* يضيف تباعد مناسب أسفل الهيدر */
+    text-align: center;
+    font-size: 36px;
+    color: #1b1b1b;
+  }
+  
+  .highlight {
+    color: #bc9667; /* لون مختلف */
+  }
+  
+
+  .gallery {
+    display: grid; /* استخدام نظام الشبكة لعرض الصور */
+    grid-template-columns: repeat(3, 1fr); /* تقسيم الشبكة إلى 3 أعمدة متساوية */
+    gap: 25px; /* المسافة بين الصور */
+    padding: 20px; /* إضافة مسافة داخلية حول الشبكة */
+    max-width: 1200px; /* تحديد عرض الشبكة الأقصى */
+    margin: 0 auto; /* توسيط المعرض في منتصف الصفحة */
+}
+/* تنسيق الصور داخل الحاوية */
+.image-container img {
+    width: 100%; /* جعل الصورة تملأ عرض الحاوية بالكامل */
+    height: 100%; /* جعل الصورة تملأ ارتفاع الحاوية بالكامل */
+    object-fit: cover; /* الحفاظ على أبعاد الصورة وتغطية الحاوية دون تشويه */
+    transition: transform 0.3s ease-in-out; /* إضافة تأثير تحول تدريجي للصور */
+    border-radius: 3%;
+
+}
+/* تأثير تكبير الصورة عند تمرير الماوس فوقها */
+ .image-container img:hover {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1); /* تكبير الصورة بنسبة 10% */
+} 

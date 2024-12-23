@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/*الكود الخاص بالخدمات ////////////////////////////////////////////////////////////////////////////*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: #1b1b1b;
+  }
+  
+  header .logo img {
+    width: 60px;
+    border-radius: 20px;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  
+  .navbar a {
+    
+    text-decoration: none;
+    padding: 8px 17px;
+    color: #fff;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover {
+    background: #bc9667;
+    border-radius: 0.5rem;
+    transition: 0.5s all linear; /* لون عند التمرير */
+  }
+  
+  
+  .header-icon i {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    z-index: 10000;
+    column-gap: 0.8rem;
+    color: #fff;
+  }
+  
+  .header-icon i:hover {
+    color: #bc9667;
+  }
+  
+  .search-box {
+    display: none; /* يخفي مربع البحث */
+  }
+/* end header */
+
+body {
+    font-family: "merriweather", serif; /* تعيين خط النصوص الافتراضي */
+    background-color: #f8f4f0; /* تحديد لون خلفية الصفحة */
+}
+
+.container-fluid {
+    padding: 0; /* ازاله الحواف الداخليه*/
+    margin-top: 170px; /*  إضافة مسافة علوية للعنوان*/
+}
+
+.x {
+    color: #1b1b1b; 
+    font-weight: bold; /* جعل النص عريضًا */
+}
+
+.z {
+    color: #b5835a; 
+    font-weight: bold; 
+}
+
+
+.container {
+    padding-top: 100px; /* إضافة مسافة داخلية علوية */
+}
+
+/* تصميم البطاقات */
+.card {
+    background-color: #1b1b1b; /* لون خلفية البطاقة بني داكن */
+    border: none; /* إزالة الإطار الخارجي للبطاقة */
+    border-radius: 10px; /* جعل زوايا البطاقة مستديرة */
+    transition: transform 0.3s ease-in-out; /* إضافة تأثير حركة عند التفاعل */
+}
+.card:hover {
+    background-color: #4e3227; /* تغيير لون خلفية البطاقة إلى الأسود */
+    transform: translateY(-10px); /* رفع البطاقة لأعلى بمقدار 10 بكسل */
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+/* تنسيق النصوص داخل العناوين <h5> */
+h5 {
+    color: #bc9667; /* لون النص ذهبي فاتح */
+}
